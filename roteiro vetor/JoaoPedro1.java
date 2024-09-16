@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class JoaoPedro1 {
      public static void main(String[] args) {
-      Scanner teclado= new Scanner(System.in);
+      Scanner teclado = new Scanner(System.in);
 
       int[] idade = new int[40];
       String[] nome = new String[40];
