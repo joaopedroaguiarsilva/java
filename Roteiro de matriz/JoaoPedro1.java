@@ -1,5 +1,5 @@
 import java.util.Scanner; 
-public class JoaoPedro1{
+public class JoaoPedro1 {
    public static void main(String []args){
    Scanner teclado = new Scanner(System.in);
    int [] [] matriz = new int [2] [2];

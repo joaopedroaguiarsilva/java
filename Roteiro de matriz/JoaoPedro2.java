@@ -1,5 +1,5 @@
 import java.util.Scanner; 
-public class JoaoPedro2{
+public class JoaoPedro2 {
    public static void main(String []args){
    Scanner teclado = new Scanner(System.in);
    
