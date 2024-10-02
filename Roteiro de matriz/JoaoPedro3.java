@@ -13,20 +13,36 @@ public class JoaoPedro3 {
 
    double A[][]= new double[3][4];
    double B[][]= new double[linhas][colunas];
+   double C[][]= new double[3][colunas];
 
+   System.out.println(" ");
+   System.out.println("Matriz A: ");
    preencherMatriz(A, teclado);
+   System.out.println("");
+   System.out.println("Matriz B: ");
    preencherMatriz(B, teclado);
+   
+   /* Cij= Somatório de z Aiz * Biz para todo ij */
 
    if(linhas == 4)
    {
-      double C[][]= new double[3][colunas];
-
+      for(int i= 0; i < A.length; i++)
+      {
+         for(int j= 0; j < colunas; j++)
+         {
+            for(int z= 0; z < linhas; z++)
+            {
+               C[i][j] += A[i][z] * B[z][j];
+            }
+         }
+      }
+      System.out.println("Matriz C: ");
+      imprimeMatriz(C);
    }
    else
    {
       System.out.println("Não é possível realizar uma multiplicação entre essas duas matrizes! ");
    }
-
    teclado.close();
    }
 
